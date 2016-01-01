@@ -1,6 +1,20 @@
 FS Listener
 ===========
 
+Derived work from [synrc/fs](https://github.com/synrc/fs). 
+
+There are 2 issues in initial `fs` design:
+
+* impossible to change subscribed path after start of application, which makes it impossible 
+to start `fs` as dependency and change the path to something else, as `cwd`
+* impossible to start more, than one listener to changes
+
+Initial issues: [syncr/fs#12](https://github.com/synrc/fs/issues/12), [syncr/fs#18](https://github.com/synrc/fs/pull/18)
+
+Until this issues are unsolved for a long time in original repository, this derived 
+work exists, and will be maintained to incorporate all upcoming features/bug fixes from
+original `fs` implementation.
+
 Backends
 --------
 
